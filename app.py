@@ -138,7 +138,7 @@ def results(gameInfo):
         row_data.append(f"{gameInfo['history'][gameInfo['question']][2]}") # O or X
         data.append(row_data)
 
-    fig, ax = plt.subplots(figsize=(10, 6))
+    fig, ax = plt.subplots(figsize=(8, (gameInfo['questions'] / 2 - 1)))
     ax.axis('tight')
     ax.axis('off')
 
